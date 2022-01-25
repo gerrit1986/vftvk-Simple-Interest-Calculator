@@ -1,7 +1,7 @@
 function compute()
 {
     var principal = document.getElementById("principal").value;
-    
+
     var rate = document.getElementById("rate").value;
 
     var years = document.getElementById("years").value;
@@ -10,11 +10,12 @@ function compute()
 
     var year = new Date().getFullYear()+parseInt(years);
 
-    function updateRate() 
-{
+    function updateRate() {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
-}
+    }
+    rate.addEventListener("change", updateRate);
+
     p = document.getElementById("principal").value;
     
 }
