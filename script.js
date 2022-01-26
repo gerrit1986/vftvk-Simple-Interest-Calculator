@@ -14,7 +14,7 @@ function compute()
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
     }
-    // rate.addEventListener("change", updateRate);
+    rate.onchange = function() {updateRate()};
 
     p = document.getElementById("principal").value;
     
